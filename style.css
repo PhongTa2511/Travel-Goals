@@ -4,19 +4,19 @@ body{
     margin: 0;
 }
 header{
+    width: 100%;
     padding: 15px 55px;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     display: flex;
     box-sizing: border-box;
+    position: absolute;
 }
-#page-logo{
-    width: 50%;
-    flex-wrap: wrap;
-}
+
+   
  #page-logo a{ 
-color: yellow;
+color: rgb(245, 243, 160);
 font-family:"Oleo Script", system-ui;;
 font-style: normal;
 font-weight: 400;
@@ -29,7 +29,7 @@ position: relative;
 }
 
  header nav{
-    width: 50%;
+    
     display: flex;
     justify-content: end;
     /* tự căn khoảng cách giữa các phần tử */
@@ -41,16 +41,23 @@ position: relative;
 
  }
 header nav ul li a {
-    color: yellowgreen;
+    color: rgb(255, 251, 0);
     justify-content: space-between;
-    padding: 5px;
     margin: 10px;
      list-style: none;
     text-decoration: none; 
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+ }
+ header nav ul li a:hover{
+    color:rgb(77, 77, 77);
+    background-color:rgb(255, 251, 0) ;
  }
  
  #hero{
-height: 600px;
+height: 800px;
 background-image: url("images/pictures/ocean.jpg");
 background-size: cover;
 background-position: center;
